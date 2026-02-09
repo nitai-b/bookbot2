@@ -31,7 +31,6 @@ def get_alphabetic_characters(book_path):
     return sorted(alphabetic_list, key= lambda dict: dict["num"], reverse=True)
 
 def get_top_frequent_characters(k, book_path):
-    for item in get_alphabetic_characters(book_path)[:k]:
-        print(f"{item['char']}: {item['num']}")
+    return get_alphabetic_characters(book_path)[:k]
 
 

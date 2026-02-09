@@ -17,7 +17,8 @@ def main():
     for item in get_alphabetic_characters(book_path):
         print(f"{item['char']}: {item['num']}")
     print("------ Top Character Count ------")
-    get_top_frequent_characters(10, book_path)
+    for item in get_top_frequent_characters(10, book_path):
+        print(f"{item['char']}: {item['num']}")
     print("============= END ===============")
 
 if __name__ == "__main__":
